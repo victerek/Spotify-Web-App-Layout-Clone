@@ -1,0 +1,220 @@
+/* --- General styles --- */
+* {
+	box-sizing: border-box;
+}
+
+/* --- Typography --- */
+
+body {
+	margin: 0;
+	font-family: "Circular Spotify Tx T Black";
+	text-align: center;
+	display: flex;
+	height: 100vh;
+}
+
+/* --- Aside content --- */
+
+aside {
+    max-width: 15%;
+	background: #040404;
+	color: white;
+	min-height: 85vh;
+	flex: 1;
+	overflow: hidden;
+}
+
+aside nav li {
+	list-style-type: none;
+	margin: 0.6em;
+	padding: 0.6em
+}
+
+aside nav li:first-child {
+	background: #282828;
+}
+
+aside .spotify-logo {
+	display: block;
+	width: 200px;
+	height: 65px;
+	background: black;
+	min-width: 15vw;
+	object-fit: cover;
+}
+
+.playlist-container div {
+	margin: 0.9em 0;
+	padding: 0.2em 0;
+}
+
+.playlist-container span {
+	display: block;
+	padding: 0.6em;
+}
+
+/* --- Main content --- */
+
+main {
+	min-height: 85vh;
+	max-width: 85%;
+	background: #121212;
+	flex: 1;
+	overflow-y: scroll;
+}
+
+.arrow-header {
+	display: flex;
+	width: 100%;
+	background: #121212;
+}
+
+.arrow-header p {
+	border: none;
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,.7);
+	margin: 1em 0.5em;
+}
+
+.arrow-header .left {
+	display: inline-block;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	width: 10px;
+	height: 10px;
+	transform: rotate(-45deg);
+	color: white;
+	margin: 0.6em;
+}
+
+.arrow-header .right {
+	display: inline-block;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	width: 10px;
+	height: 10px;
+	transform: rotate(135deg);
+	color: white;
+	margin: 0.6em;
+}
+
+.sticky-colored {
+	position: fixed;
+	top: 0;
+	width: 85%;
+	background: #040404;
+	transition-property: background;
+	transition-delay: .1s;
+
+  }
+
+main h2 {
+	color: white;
+	text-align: left;
+	margin-left: .6em;
+	margin-top: 0;
+	font-size: 1.5em;
+}
+
+main .recently-played {
+	display: flex;
+	align-items: center;
+}
+
+main .recently-played [class*="card"] {
+	width: 200px;
+	height: 250px;
+	margin: 1em;
+	background: #282828;
+	color: white;
+	flex: 1;
+  	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	border-radius: 5%;
+	font-weight: bold;
+}
+
+.recently-played [class*="card"] > * {
+	color: #d7c8c8;
+	text-decoration: none;
+}
+
+.recently-played .play-button {
+	height: 32px;
+	border-radius: 50%;
+	background-color: #1db954;
+	color: white;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: none;
+	max-width: 32px;
+	margin-right: 0;
+	margin-right: 0;
+}
+
+.recently-played [class*="card"]:hover .play-button {
+	transform: scale(1.06);
+	cursor: pointer;
+	display: inline;
+	flex: 0 1 100%;
+}
+
+.recently-played img {
+	display: block;
+	max-width: 110px;
+	height: 140px;
+	margin-top: 1em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.recently-played a {
+	margin-top: 1em;
+	flex-basis: 100%;
+}
+
+.recently-played span {
+	font-size: 0.6em;
+	align-self: flex-end;
+	margin-bottom: 1em;
+	color: #B3B3B3;
+	flex-basis: 65%;
+	min-width: 60%;
+}
+
+/* --- Footer --- */
+
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	min-height: 15vh;
+	padding: 1rem;
+	background: #282828;
+	flex-shrink: 0;
+	display: flex;
+	color: white;
+}
+
+footer .col-1 {
+	width: 15%;
+}
+
+footer .col-2 {
+	width: 65%;
+}
+
+footer .col-3 {
+	width: 15%;
+}
+
+
+
+
+
