@@ -218,6 +218,7 @@ footer {
 .artist-container {
 	display: flex;
 	flex-direction: column;
+	margin-right: 10em;
 }
 
 .song-name {
@@ -225,8 +226,35 @@ footer {
 	margin-bottom: 5px;
 }
 
+.player-controls {
+	width: 40vw;
+	display: flex;
+	flex-direction: row;
+}
 
+.shuffle {
+	background-color: #fff;
+	mask-image: url('https://api.iconify.design/mdi-shuffle.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	height: 17px;
+	width: 17px;
+}
 
+.previous-song {
+	background: url('https://api.iconify.design/ic:baseline-skip-previous.svg?color=white') no-repeat center center / contain;
+	height: 17px;
+	width: 17px;
+	margin-left: 1.5em;
+}
+
+.next-song {
+	background: url('https://api.iconify.design/ic:baseline-skip-next.svg?color=white') no-repeat center center / contain;
+	height: 17px;
+	width: 17px;
+	margin-left: 1.5em;
+}
 
 
 
