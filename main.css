@@ -119,8 +119,9 @@ main h2 {
 }
 
 main .recently-played {
-	display: flex;
-	align-items: center;
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 main .recently-played [class*="card"] {
@@ -129,12 +130,15 @@ main .recently-played [class*="card"] {
 	margin: 1em;
 	background: #282828;
 	color: white;
-	flex: 1;
-  	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
+	display: inline-block;
 	border-radius: 5%;
 	font-weight: bold;
+}
+
+[class*="card"] .artist-details a {
+	text-decoration: none;
+	color: white;
+	display: block;
 }
 
 .recently-played [class*="card"] > * {
@@ -154,19 +158,16 @@ main .recently-played [class*="card"] {
 	display: none;
 	max-width: 32px;
 	margin-right: 0;
-	margin-right: 0;
 }
 
 .recently-played [class*="card"]:hover .play-button {
 	transform: scale(1.06);
 	cursor: pointer;
 	display: inline;
-	flex: 0 1 100%;
 }
 
 .recently-played img {
 	display: block;
-	max-width: 110px;
 	height: 140px;
 	margin-top: 1em;
 	margin-right: auto;
