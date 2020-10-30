@@ -116,10 +116,18 @@ main h2 {
 	position: relative;
 }
 
+.recently-played .artist-details {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
 .recently-played .artist-details a {
 	text-decoration: none;
 	color: white;
 	display: block;
+	margin-bottom: 0.4em;
+	font-weight: 900;
 }
 
 .recently-played .play-button {
@@ -157,12 +165,11 @@ main h2 {
 }
 
 .recently-played span {
-	font-size: 0.6em;
-	align-self: flex-end;
+	font-size: 0.8em;
 	margin-bottom: 1em;
-	color: #B3B3B3;
-	flex-basis: 65%;
-	min-width: 60%;
+	color: white;
+	letter-spacing: normal;
+	font-weight: 500;
 }
 
 /* --- Song cards end --- */
