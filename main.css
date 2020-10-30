@@ -246,3 +246,17 @@ footer {
 }
 
 /* --- Footer end --- */
+
+/* --- Media queries --- */
+
+@media only screen and (max-width: 1000px) {
+	aside {
+		max-width: 35%;
+	}
+
+	aside .spotify-logo {
+		min-width: 35vw;
+	}
+}
+
+/* --- end of Media queries --- */
