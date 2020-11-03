@@ -101,6 +101,7 @@ main h2 {
 	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 }
 
+
 .recently-played:nth-of-type(1) {
 	margin-top: 3.2em;
 }
@@ -200,14 +201,14 @@ footer {
 .song-info img {
 	height: 60px;
 	width: 60px;
-	margin-right: 20px;
+	margin-right: 30px;
 	object-fit: contain;
 }
 
 .artist-container {
 	display: flex;
 	flex-direction: column;
-	margin-right: 10em;
+	margin-right: 20em;
 }
 
 .song-name {
@@ -215,35 +216,63 @@ footer {
 	margin-bottom: 5px;
 }
 
+.song-info span {
+	height: 30px;
+	width: 30px;
+	margin-left: 1.5em;
+}
+
 .player-controls {
-	width: 40vw;
+	width: 60vh;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 }
 
 .shuffle {
-	background-color: #fff;
-	mask-image: url('https://api.iconify.design/mdi-shuffle.svg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: contain;
-	height: 17px;
-	width: 17px;
+	background: url('https://api.iconify.design/radix-icons:shuffle.svg?color=white') no-repeat center center / contain;;
+	width: 25px;
+	margin-left: 0;
 }
 
 .previous-song {
 	background: url('https://api.iconify.design/ic:baseline-skip-previous.svg?color=white') no-repeat center center / contain;
-	height: 17px;
-	width: 17px;
-	margin-left: 1.5em;
 }
 
 .next-song {
 	background: url('https://api.iconify.design/ic:baseline-skip-next.svg?color=white') no-repeat center center / contain;
-	height: 17px;
-	width: 17px;
+}
+
+.play-pause-song {
+	background: url('https://api.iconify.design/carbon:pause-outline.svg?color=white') no-repeat center center / contain;
+}
+
+.repeat-song {
+	background: url('https://api.iconify.design/ion:repeat-outline.svg?color=white') no-repeat center center / contain;
+}
+
+.additional-controls {
+	width: 25vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+
+.queue-song {
+	background: url('https://api.iconify.design/ic:twotone-queue-music.svg?color=white') no-repeat center center / contain;
+	height: 30px;
+	width: 30px;
 	margin-left: 1.5em;
 }
+
+.connect-device {
+	background: url('https://api.iconify.design/bi:music-player.svg?color=white') no-repeat center center / contain;
+}
+
+.sound-volume {
+	background: url('https://api.iconify.design/bi:volume-down.svg?color=white') no-repeat center center / contain;
+}
+
 
 /* --- Footer end --- */
 
