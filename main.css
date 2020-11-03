@@ -115,6 +115,7 @@ main h2 {
 	border-radius: 3%;
 	font-weight: bold;
 	position: relative;
+	transition: background-color .3s linear;
 }
 
 .recently-played [class*="card"]:hover {
@@ -126,6 +127,8 @@ main h2 {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
+	margin: .2em .5em;
+	font-size: 0.9em;
 }
 
 .recently-played .artist-details a {
@@ -156,6 +159,7 @@ main h2 {
 
 .recently-played [class*="card"]:hover .play-button {
 	transform: scale(1.06);
+	transition: transform .3s linear;
 	cursor: pointer;
 	display: inline;
 }
