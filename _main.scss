@@ -1,4 +1,4 @@
-main {
+.main {
 	background: #121212;
 	flex: 1;
 	overflow-y: scroll;
@@ -6,7 +6,7 @@ main {
   h2 {
     color: white;
   }
-  .arrow-header {
+  &__arrows {
     display: flex;
     width: 100%;
     background: #121212;
@@ -19,7 +19,7 @@ main {
       background-color: rgba(0, 0, 0, .7);
       margin: 1em 0.5em;
     }
-    .left, .right {
+    &--left, &--right {
       display: inline-block;
       border-right: 1px solid white;
       border-bottom: 1px solid white;
@@ -28,10 +28,10 @@ main {
       color: white;
       margin: 0.6em;
     }
-    .left {
+    &--left {
       transform: rotate(-45deg);
     }
-    .right {
+    &--right {
       transform: rotate(135deg);
     }
   }

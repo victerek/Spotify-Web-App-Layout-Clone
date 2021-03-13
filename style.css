@@ -10,49 +10,49 @@ body {
   height: 100vh;
 }
 
-aside {
+.aside {
   max-width: 15%;
   background: #040404;
   color: white;
   flex: 1;
   overflow: hidden;
 }
-aside nav li {
+.aside__nav .aside__nav-item {
   list-style-type: none;
   margin: 0.6em;
   padding: 0.6em;
 }
-aside nav li:first-child {
+.aside__nav .aside__nav-item:first-child {
   background: #282828;
 }
-aside .spotify-logo {
+.aside__logo {
   display: block;
   width: 200px;
   height: 65px;
   background: black;
   min-width: 15vw;
 }
-aside .playlist-container span {
+.aside__playlist .aside__playlist-item {
   display: block;
   padding: 0.6em;
 }
 
-main {
+.main {
   background: #121212;
   flex: 1;
   overflow-y: scroll;
   height: 100%;
 }
-main h2 {
+.main h2 {
   color: white;
 }
-main .arrow-header {
+.main__arrows {
   display: flex;
   width: 100%;
   background: #121212;
   position: fixed;
 }
-main .arrow-header p {
+.main__arrows p {
   border: none;
   height: 32px;
   width: 32px;
@@ -60,7 +60,7 @@ main .arrow-header p {
   background-color: rgba(0, 0, 0, 0.7);
   margin: 1em 0.5em;
 }
-main .arrow-header .left, main .arrow-header .right {
+.main__arrows--left, .main__arrows--right {
   display: inline-block;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
@@ -69,22 +69,22 @@ main .arrow-header .left, main .arrow-header .right {
   color: white;
   margin: 0.6em;
 }
-main .arrow-header .left {
+.main__arrows--left {
   transform: rotate(-45deg);
 }
-main .arrow-header .right {
+.main__arrows--right {
   transform: rotate(135deg);
 }
 
-.recently-played {
+.main__recently-played {
   display: grid;
   grid-gap: 2px;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 }
-.recently-played:nth-of-type(1) {
+.main__recently-played:nth-of-type(1) {
   margin-top: 3.2em;
 }
-.recently-played [class*=card] {
+.main__recently-played [class*=card] {
   width: 180px;
   height: 240px;
   margin: 1em;
@@ -95,31 +95,31 @@ main .arrow-header .right {
   position: relative;
   transition: background-color 0.3s linear;
 }
-.recently-played [class*=card]:hover {
+.main__recently-played [class*=card]:hover {
   background-color: #333232;
   transition: background-color 0.3s linear;
 }
-.recently-played [class*=card]:hover .play-button {
+.main__recently-played [class*=card]:hover-play-button {
   transform: scale(1.06);
   transition: transform 0.3s linear;
   cursor: pointer;
   display: inline;
 }
-.recently-played .artist-details {
+.main__recently-played-artist-details {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   margin: 0.2em 0.5em;
   font-size: 0.9em;
 }
-.recently-played .artist-details a {
+.main__recently-played-artist-details a {
   text-decoration: none;
   color: white;
   display: block;
   margin-bottom: 0.4em;
   font-weight: 900;
 }
-.recently-played .play-button {
+.main__recently-played-play-button {
   height: 40px;
   border-radius: 50%;
   background-color: #1db954;
@@ -136,16 +136,16 @@ main .arrow-header .right {
   left: 75px;
   transition: transform 0.3s linear;
 }
-.recently-played img {
+.main__recently-played img {
   display: block;
   height: 140px;
   margin: 1em auto 0;
 }
-.recently-played a {
+.main__recently-played a {
   margin-top: 1em;
   flex-basis: 100%;
 }
-.recently-played span {
+.main__recently-played span {
   font-size: 0.8em;
   margin-bottom: 1em;
   color: white;
@@ -153,7 +153,7 @@ main .arrow-header .right {
   font-weight: 500;
 }
 
-footer {
+.footer {
   position: fixed;
   bottom: 0px;
   left: 0px;
@@ -164,77 +164,77 @@ footer {
   background: #282828;
   color: white;
 }
-footer .song-info {
+.footer__song-info {
   display: flex;
   align-items: center;
   color: #fff;
   padding: 2px;
 }
-footer .song-info img {
+.footer__song-info img {
   height: 60px;
   width: 60px;
   margin-right: 30px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-footer .song-info .artist-container {
+.footer__song-info__artist-container {
   display: flex;
   flex-direction: column;
   margin-right: 20em;
 }
-footer .song-info .artist-container .song-name {
+.footer__song-info__artist-container--song-name {
   font-weight: bold;
   margin-bottom: 5px;
 }
-footer .song-info .player-controls {
+.footer__song-info__player-controls {
   width: 60vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-footer .song-info .player-controls span {
+.footer__song-info__player-controls span {
   height: 26px;
   width: 26px;
   margin-left: 1.5em;
 }
-footer .song-info .player-controls .shuffle {
+.footer__song-info__player-controls--shuffle {
   background: url("https://api.iconify.design/radix-icons:shuffle.svg?color=white") no-repeat center center/contain;
   width: 25px;
   margin-left: 0;
 }
-footer .song-info .player-controls .previous-song {
+.footer__song-info__player-controls--prev-song {
   background: url("https://api.iconify.design/ic:baseline-skip-previous.svg?color=white") no-repeat center center/contain;
 }
-footer .song-info .player-controls .next-song {
+.footer__song-info__player-controls--next-song {
   background: url("https://api.iconify.design/ic:baseline-skip-next.svg?color=white") no-repeat center center/contain;
 }
-footer .song-info .player-controls .play-pause-song {
+.footer__song-info__player-controls--pause-song {
   background: url("https://api.iconify.design/carbon:pause-outline.svg?color=white") no-repeat center center/contain;
 }
-footer .song-info .player-controls .repeat-song {
+.footer__song-info__player-controls--repeat-song {
   background: url("https://api.iconify.design/ion:repeat-outline.svg?color=white") no-repeat center center/contain;
 }
-footer .song-info .additional-controls {
+.footer__song-info__additional-controls {
   width: 25vw;
   display: flex;
   flex-direction: row;
   justify-content: right;
 }
-footer .song-info .additional-controls span {
+.footer__song-info__additional-controls span {
   height: 26px;
   width: 26px;
   margin-left: 1.5em;
 }
-footer .song-info .additional-controls .queue-song {
+.footer__song-info__additional-controls--queue-song {
   background: url("https://api.iconify.design/ic:twotone-queue-music.svg?color=white") no-repeat center center/contain;
   height: 30px;
   width: 30px;
   margin-left: 1.5em;
 }
-footer .song-info .additional-controls .connect-device {
+.footer__song-info__additional-controls--connect-device {
   background: url("https://api.iconify.design/bi:music-player.svg?color=white") no-repeat center center/contain;
 }
-footer .song-info .additional-controls .sound-volume {
+.footer__song-info__additional-controls--sound-volume {
   background: url("https://api.iconify.design/bi:volume-down.svg?color=white") no-repeat center center/contain;
 }
 

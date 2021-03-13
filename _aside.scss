@@ -1,10 +1,10 @@
-aside {
+.aside {
 	max-width: 15%;
 	background: #040404;
 	color: white;
 	flex: 1;
 	overflow: hidden;
-  nav li {
+  &__nav &__nav-item {
     list-style-type: none;
     margin: 0.6em;
     padding: 0.6em;
@@ -12,14 +12,14 @@ aside {
       background: #282828;
     }
   }
-  .spotify-logo {
+  &__logo {
     display: block;
     width: 200px;
     height: 65px;
     background: black;
     min-width: 15vw;
   }
-  .playlist-container span {
+  &__playlist &__playlist-item {
     display: block;
     padding: 0.6em;
   }
