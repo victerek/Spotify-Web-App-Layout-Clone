@@ -99,27 +99,27 @@ body {
   background-color: #333232;
   transition: background-color 0.3s linear;
 }
-.main__recently-played [class*=card]:hover-play-button {
+.main__recently-played [class*=card]:hover__play-button {
   transform: scale(1.06);
   transition: transform 0.3s linear;
   cursor: pointer;
   display: inline;
 }
-.main__recently-played-artist-details {
+.main__recently-played__artist-details {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   margin: 0.2em 0.5em;
   font-size: 0.9em;
 }
-.main__recently-played-artist-details a {
+.main__recently-played__artist-details a {
   text-decoration: none;
   color: white;
   display: block;
   margin-bottom: 0.4em;
   font-weight: 900;
 }
-.main__recently-played-play-button {
+.main__recently-played__play-button {
   height: 40px;
   border-radius: 50%;
   background-color: #1db954;

@@ -19,7 +19,7 @@
       &:hover {
         background-color: #333232;
         transition: background-color .3s linear;
-        &-play-button {
+        &__play-button {
           transform: scale(1.06);
           transition: transform .3s linear;
           cursor: pointer;
@@ -27,7 +27,7 @@
         }
       }
     }
-    &-artist-details {
+    &__artist-details {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
@@ -41,7 +41,7 @@
         font-weight: 900;
       }
     }
-    &-play-button {
+    &__play-button {
       height: 40px;
       border-radius: 50%;
       background-color: #1db954;
