@@ -1,0 +1,83 @@
+footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	min-width: 15vw;
+	height: 100px;
+	padding: 1rem;
+	background: #282828;
+	color: white;
+  .song-info {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 2px;
+    img {
+      height: 60px;
+      width: 60px;
+      margin-right: 30px;
+      object-fit: contain;
+    }
+    .artist-container {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20em;
+      .song-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    }
+    .player-controls {
+      width: 60vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      span {
+        height: 26px;
+        width: 26px;
+        margin-left: 1.5em;
+      }
+      .shuffle {
+        background: url('https://api.iconify.design/radix-icons:shuffle.svg?color=white') no-repeat center center / contain;;
+        width: 25px;
+        margin-left: 0;
+      }
+      .previous-song {
+        background: url('https://api.iconify.design/ic:baseline-skip-previous.svg?color=white') no-repeat center center / contain;
+      }
+      .next-song {
+        background: url('https://api.iconify.design/ic:baseline-skip-next.svg?color=white') no-repeat center center / contain;
+      }
+      .play-pause-song {
+        background: url('https://api.iconify.design/carbon:pause-outline.svg?color=white') no-repeat center center / contain;
+      }
+      .repeat-song {
+        background: url('https://api.iconify.design/ion:repeat-outline.svg?color=white') no-repeat center center / contain;
+      }
+    }
+    .additional-controls {
+      width: 25vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: right;    
+      span {
+        height: 26px;
+        width: 26px;
+        margin-left: 1.5em;
+      }
+      .queue-song {
+        background: url('https://api.iconify.design/ic:twotone-queue-music.svg?color=white') no-repeat center center / contain;
+        height: 30px;
+        width: 30px;
+        margin-left: 1.5em;
+      }
+      .connect-device {
+        background: url('https://api.iconify.design/bi:music-player.svg?color=white') no-repeat center center / contain;
+      }
+      .sound-volume {
+        background: url('https://api.iconify.design/bi:volume-down.svg?color=white') no-repeat center center / contain;
+      }
+    }
+  }
+}

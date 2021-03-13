@@ -1,0 +1,26 @@
+aside {
+	max-width: 15%;
+	background: #040404;
+	color: white;
+	flex: 1;
+	overflow: hidden;
+  nav li {
+    list-style-type: none;
+    margin: 0.6em;
+    padding: 0.6em;
+    &:first-child {
+      background: #282828;
+    }
+  }
+  .spotify-logo {
+    display: block;
+    width: 200px;
+    height: 65px;
+    background: black;
+    min-width: 15vw;
+  }
+  .playlist-container span {
+    display: block;
+    padding: 0.6em;
+  }
+}
