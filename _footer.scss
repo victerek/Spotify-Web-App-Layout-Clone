@@ -19,65 +19,68 @@
       margin-right: 30px;
       object-fit: contain;
     }
-    &__artist-container {
-      display: flex;
-      flex-direction: column;
-      margin-right: 20em;
-      &--song-name {
-        font-weight: bold;
-        margin-bottom: 5px;
-      }
+  }
+  &__artist-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20em;
+  }
+  &__player-controls {
+    width: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    span {
+      height: 26px;
+      width: 26px;
+      margin-left: 1.5em;
     }
-    &__player-controls {
-      width: 60vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      span {
-        height: 26px;
-        width: 26px;
-        margin-left: 1.5em;
-      }
-      &--shuffle {
-        background: url('https://api.iconify.design/radix-icons:shuffle.svg?color=white') no-repeat center center / contain;;
-        width: 25px;
-        margin-left: 0;
-      }
-      &--prev-song {
-        background: url('https://api.iconify.design/ic:baseline-skip-previous.svg?color=white') no-repeat center center / contain;
-      }
-      &--next-song {
-        background: url('https://api.iconify.design/ic:baseline-skip-next.svg?color=white') no-repeat center center / contain;
-      }
-      &--pause-song {
-        background: url('https://api.iconify.design/carbon:pause-outline.svg?color=white') no-repeat center center / contain;
-      }
-      &--repeat-song {
-        background: url('https://api.iconify.design/ion:repeat-outline.svg?color=white') no-repeat center center / contain;
-      }
+  }
+  &__additional-controls {
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;    
+    span {
+      height: 26px;
+      width: 26px;
+      margin-left: 1.5em;
     }
-    &__additional-controls {
-      width: 25vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: right;    
-      span {
-        height: 26px;
-        width: 26px;
-        margin-left: 1.5em;
-      }
-      &--queue-song {
-        background: url('https://api.iconify.design/ic:twotone-queue-music.svg?color=white') no-repeat center center / contain;
-        height: 30px;
-        width: 30px;
-        margin-left: 1.5em;
-      }
-      &--connect-device {
-        background: url('https://api.iconify.design/bi:music-player.svg?color=white') no-repeat center center / contain;
-      }
-      &--sound-volume {
-        background: url('https://api.iconify.design/bi:volume-down.svg?color=white') no-repeat center center / contain;
-      }
-    }
+  }
+  // Artist container
+  &__song-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  // Player controls
+  &__shuffle {
+    background: url('https://api.iconify.design/radix-icons:shuffle.svg?color=white') no-repeat center center / contain;;
+    width: 25px;
+    margin-left: 0;
+  }
+  &__prev-song {
+    background: url('https://api.iconify.design/ic:baseline-skip-previous.svg?color=white') no-repeat center center / contain;
+  }
+  &__next-song {
+    background: url('https://api.iconify.design/ic:baseline-skip-next.svg?color=white') no-repeat center center / contain;
+  }
+  &__pause-song {
+    background: url('https://api.iconify.design/carbon:pause-outline.svg?color=white') no-repeat center center / contain;
+  }
+  &__repeat-song {
+    background: url('https://api.iconify.design/ion:repeat-outline.svg?color=white') no-repeat center center / contain;
+  }
+  // Additional controls
+  &__queue-song {
+    background: url('https://api.iconify.design/ic:twotone-queue-music.svg?color=white') no-repeat center center / contain;
+    height: 30px;
+    width: 30px;
+    margin-left: 1.5em;
+  }
+  &__connect-device {
+    background: url('https://api.iconify.design/bi:music-player.svg?color=white') no-repeat center center / contain;
+  }
+  &__sound-volume {
+    background: url('https://api.iconify.design/bi:volume-down.svg?color=white') no-repeat center center / contain;
   }
 }

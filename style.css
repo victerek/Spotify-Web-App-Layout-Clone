@@ -17,12 +17,12 @@ body {
   flex: 1;
   overflow: hidden;
 }
-.aside__nav .aside__nav-item {
+.aside__nav .aside__item {
   list-style-type: none;
   margin: 0.6em;
   padding: 0.6em;
 }
-.aside__nav .aside__nav-item:first-child {
+.aside__nav .aside__item:first-child {
   background: #282828;
 }
 .aside__logo {
@@ -99,42 +99,11 @@ body {
   background-color: #333232;
   transition: background-color 0.3s linear;
 }
-.main__recently-played [class*=card]:hover__play-button {
+.main__recently-played [class*=card]:hover .main__play-button {
   transform: scale(1.06);
   transition: transform 0.3s linear;
   cursor: pointer;
   display: inline;
-}
-.main__recently-played__artist-details {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0.2em 0.5em;
-  font-size: 0.9em;
-}
-.main__recently-played__artist-details a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  margin-bottom: 0.4em;
-  font-weight: 900;
-}
-.main__recently-played__play-button {
-  height: 40px;
-  border-radius: 50%;
-  background-color: #1db954;
-  color: white;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em;
-  display: none;
-  width: 40px;
-  margin-right: 0;
-  position: absolute;
-  top: 70px;
-  left: 75px;
-  transition: transform 0.3s linear;
 }
 .main__recently-played img {
   display: block;
@@ -151,6 +120,37 @@ body {
   color: white;
   letter-spacing: normal;
   font-weight: 500;
+}
+.main__artist-details {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0.2em 0.5em;
+  font-size: 0.9em;
+}
+.main__artist-details a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 0.4em;
+  font-weight: 900;
+}
+.main__play-button {
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  display: none;
+  width: 40px;
+  margin-right: 0;
+  position: absolute;
+  top: 70px;
+  left: 75px;
+  transition: transform 0.3s linear;
 }
 
 .footer {
@@ -177,64 +177,64 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.footer__song-info__artist-container {
+.footer__artist-container {
   display: flex;
   flex-direction: column;
   margin-right: 20em;
 }
-.footer__song-info__artist-container--song-name {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.footer__song-info__player-controls {
+.footer__player-controls {
   width: 60vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.footer__song-info__player-controls span {
+.footer__player-controls span {
   height: 26px;
   width: 26px;
   margin-left: 1.5em;
 }
-.footer__song-info__player-controls--shuffle {
-  background: url("https://api.iconify.design/radix-icons:shuffle.svg?color=white") no-repeat center center/contain;
-  width: 25px;
-  margin-left: 0;
-}
-.footer__song-info__player-controls--prev-song {
-  background: url("https://api.iconify.design/ic:baseline-skip-previous.svg?color=white") no-repeat center center/contain;
-}
-.footer__song-info__player-controls--next-song {
-  background: url("https://api.iconify.design/ic:baseline-skip-next.svg?color=white") no-repeat center center/contain;
-}
-.footer__song-info__player-controls--pause-song {
-  background: url("https://api.iconify.design/carbon:pause-outline.svg?color=white") no-repeat center center/contain;
-}
-.footer__song-info__player-controls--repeat-song {
-  background: url("https://api.iconify.design/ion:repeat-outline.svg?color=white") no-repeat center center/contain;
-}
-.footer__song-info__additional-controls {
+.footer__additional-controls {
   width: 25vw;
   display: flex;
   flex-direction: row;
   justify-content: right;
 }
-.footer__song-info__additional-controls span {
+.footer__additional-controls span {
   height: 26px;
   width: 26px;
   margin-left: 1.5em;
 }
-.footer__song-info__additional-controls--queue-song {
+.footer__song-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.footer__shuffle {
+  background: url("https://api.iconify.design/radix-icons:shuffle.svg?color=white") no-repeat center center/contain;
+  width: 25px;
+  margin-left: 0;
+}
+.footer__prev-song {
+  background: url("https://api.iconify.design/ic:baseline-skip-previous.svg?color=white") no-repeat center center/contain;
+}
+.footer__next-song {
+  background: url("https://api.iconify.design/ic:baseline-skip-next.svg?color=white") no-repeat center center/contain;
+}
+.footer__pause-song {
+  background: url("https://api.iconify.design/carbon:pause-outline.svg?color=white") no-repeat center center/contain;
+}
+.footer__repeat-song {
+  background: url("https://api.iconify.design/ion:repeat-outline.svg?color=white") no-repeat center center/contain;
+}
+.footer__queue-song {
   background: url("https://api.iconify.design/ic:twotone-queue-music.svg?color=white") no-repeat center center/contain;
   height: 30px;
   width: 30px;
   margin-left: 1.5em;
 }
-.footer__song-info__additional-controls--connect-device {
+.footer__connect-device {
   background: url("https://api.iconify.design/bi:music-player.svg?color=white") no-repeat center center/contain;
 }
-.footer__song-info__additional-controls--sound-volume {
+.footer__sound-volume {
   background: url("https://api.iconify.design/bi:volume-down.svg?color=white") no-repeat center center/contain;
 }
 
