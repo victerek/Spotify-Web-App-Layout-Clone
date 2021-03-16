@@ -17,6 +17,11 @@ body {
   flex: 1;
   overflow: hidden;
 }
+@media screen and (max-width: 600px) {
+  .aside {
+    max-width: 100%;
+  }
+}
 .aside__nav .aside__item {
   list-style-type: none;
   margin: 0.6em;
@@ -31,6 +36,11 @@ body {
   height: 65px;
   background: black;
   min-width: 15vw;
+}
+@media (min-width: 300px) and (max-width: 2000px) {
+  .aside__logo {
+    width: 100%;
+  }
 }
 .aside__playlist .aside__playlist-item {
   display: block;
